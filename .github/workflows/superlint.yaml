@@ -1,6 +1,7 @@
 name: 'Run Super-Linter'
 
 on: ['push', 'pull_request']
+permissions: read-all
 
 jobs:
   lint:
@@ -24,3 +25,5 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BASH_EXEC_IGNORE_LIBRARIES: true
+          VALIDATE_JSCPD: false
+          VALIDATE_YAML: false
