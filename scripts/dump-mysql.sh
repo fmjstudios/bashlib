@@ -175,14 +175,14 @@ function main() {
 
   case "${cmd}" in
   help)
-    backup_mysql::usage
+    dump_mysql::usage
     ;;
   deps)
-    backup_mysql::deps
+    dump_mysql::deps
     return $?
     ;;
   *)
-    backup::run "$@"
+    dump_mysql::run "$@"
     return $?
     ;;
   esac
