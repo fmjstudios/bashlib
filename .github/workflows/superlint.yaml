@@ -24,6 +24,6 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BASH_EXEC_IGNORE_LIBRARIES: true
           VALIDATE_JSCPD: false
           VALIDATE_YAML: false
+          BASH_EXEC_IGNORE_LIBRARIES: true
